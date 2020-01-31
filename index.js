@@ -2,6 +2,11 @@ function takeANumber(line, name){
   line.push(name);
   return "Welcome, " + name + ". You are number " + (line.indexOf(name)+1) + " in line.";
   }
+  var ticketNumber = 1;
+function takeNumber(line){
+  line.push(ticketNumber);
+  return "Welcome! You have ticket Number: " + (ticketNumber++);
+}
 
 function nowServing(line){
   if (line.length === 0)
